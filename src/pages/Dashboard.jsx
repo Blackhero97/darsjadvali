@@ -96,8 +96,7 @@ const Dashboard = () => {
         {/* Beautiful Gradient Statistics Cards - Hidden on Mobile */}
         <div className="hidden md:grid grid-cols-3 gap-4 mb-6">
           <div className="relative group">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-500 to-cyan-500 rounded-2xl opacity-75 group-hover:opacity-90 transition-opacity duration-300 blur-sm group-hover:blur-0"></div>
-            <div className="relative glass-ultra p-6 rounded-2xl border border-blue-200/50 dark:border-blue-500/20">
+            <div className="relative bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 p-6 rounded-2xl border border-blue-200/50 dark:border-blue-500/20 group-hover:shadow-xl group-hover:shadow-blue-500/20 transition-all duration-300">
               <div className="flex items-center justify-between mb-3">
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center shadow-lg shadow-blue-500/30">
                   <Users className="w-6 h-6 text-white" />
@@ -120,8 +119,7 @@ const Dashboard = () => {
           </div>
 
           <div className="relative group">
-            <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 via-green-500 to-teal-500 rounded-2xl opacity-75 group-hover:opacity-90 transition-opacity duration-300 blur-sm group-hover:blur-0"></div>
-            <div className="relative glass-ultra p-6 rounded-2xl border border-emerald-200/50 dark:border-emerald-500/20">
+            <div className="relative bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-900/20 dark:to-teal-900/20 p-6 rounded-2xl border border-emerald-200/50 dark:border-emerald-500/20 group-hover:shadow-xl group-hover:shadow-emerald-500/20 transition-all duration-300">
               <div className="flex items-center justify-between mb-3">
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-500 flex items-center justify-center shadow-lg shadow-emerald-500/30">
                   <Clock className="w-6 h-6 text-white" />
@@ -144,8 +142,7 @@ const Dashboard = () => {
           </div>
 
           <div className="relative group">
-            <div className="absolute inset-0 bg-gradient-to-r from-violet-400 via-purple-500 to-pink-500 rounded-2xl opacity-75 group-hover:opacity-90 transition-opacity duration-300 blur-sm group-hover:blur-0"></div>
-            <div className="relative glass-ultra p-6 rounded-2xl border border-violet-200/50 dark:border-violet-500/20">
+            <div className="relative bg-gradient-to-br from-violet-50 to-pink-50 dark:from-violet-900/20 dark:to-pink-900/20 p-6 rounded-2xl border border-violet-200/50 dark:border-violet-500/20 group-hover:shadow-xl group-hover:shadow-violet-500/20 transition-all duration-300">
               <div className="flex items-center justify-between mb-3">
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-violet-500 to-pink-500 flex items-center justify-center shadow-lg shadow-violet-500/30">
                   <svg
@@ -235,20 +232,19 @@ const Dashboard = () => {
 
       {/* Perfect Light Mode Modal - O'qituvchi jadvali */}
       {selectedTeacher && (
-        <div className="fixed inset-0 bg-black/20 backdrop-blur-md flex items-center justify-center p-3 z-50 animate-slide-up">
-          <div className="glass-ultra rounded-2xl w-full max-w-6xl max-h-[90vh] overflow-hidden">
+        <div className="fixed inset-0 bg-black/20 flex items-center justify-center p-3 z-50 animate-slide-up">
+          <div className="bg-white rounded-2xl w-full max-w-6xl max-h-[90vh] overflow-hidden border border-gray-200/50 shadow-2xl">
             {/* Ultra Modal Header - Compact */}
             <div className="relative overflow-hidden">
-              <div
-                className="px-6 py-5 text-white relative"
-                style={{
-                  background: `linear-gradient(135deg, ${selectedTeacher.color} 0%, ${selectedTeacher.color}dd 50%, ${selectedTeacher.color}aa 100%)`,
-                }}
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent"></div>
+              <div className="px-6 py-5 relative bg-white border-b border-gray-100/80">
                 <div className="relative flex items-center justify-between">
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center font-bold text-lg backdrop-blur-sm">
+                    <div
+                      className="w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-lg text-white shadow-lg"
+                      style={{
+                        background: `linear-gradient(135deg, ${selectedTeacher.color} 0%, ${selectedTeacher.color}dd 100%)`,
+                      }}
+                    >
                       {selectedTeacher.fullName
                         .split(" ")
                         .map((n) => n[0])
@@ -256,17 +252,17 @@ const Dashboard = () => {
                         .slice(0, 2)}
                     </div>
                     <div>
-                      <h2 className="text-2xl font-bold text-shadow">
+                      <h2 className="text-2xl font-bold text-perfect">
                         {selectedTeacher.fullName}
                       </h2>
-                      <p className="text-white/90 text-sm font-medium">
+                      <p className="text-perfect-accent text-sm font-medium">
                         📅 Haftalik dars jadvali
                       </p>
                     </div>
                   </div>
                   <button
                     onClick={closeModal}
-                    className="p-2 hover:bg-white/20 rounded-xl transition-all duration-300 hover:scale-110 hover:rotate-90 backdrop-blur-sm"
+                    className="p-2 hover:bg-gray-100/80 rounded-xl transition-all duration-300 hover:scale-110 hover:rotate-90 text-gray-600 hover:text-gray-800"
                   >
                     <X size={20} />
                   </button>
@@ -284,14 +280,20 @@ const Dashboard = () => {
                   return (
                     <div
                       key={day.id}
-                      className="neon-card overflow-hidden hover-glow"
+                      className="bg-white rounded-xl border overflow-hidden shadow-sm hover:shadow-md hover:bg-gray-50/40 transition-all duration-300"
+                      style={{ borderColor: '#e1e1e1' }}
                     >
                       <button
                         onClick={() => setOpenMobileDay(isOpen ? null : day.id)}
-                        className="w-full flex items-center justify-between px-4 py-3 bg-gradient-to-r from-white/60 to-violet-50/80 dark:from-violet-900/40 dark:to-purple-900/40 hover:from-violet-50/90 hover:to-purple-50/90 dark:hover:from-violet-800/50 dark:hover:to-purple-800/50 text-left transition-all duration-300 group"
+                        className="w-full flex items-center justify-between px-4 py-3 bg-white hover:bg-gray-50/60 text-left transition-all duration-300 group"
                       >
                         <div className="flex items-center gap-3">
-                          <div className="w-8 h-8 rounded-xl gradient-cyber flex items-center justify-center text-white font-bold text-sm group-hover:scale-110 transition-transform duration-300">
+                          <div
+                            className="w-8 h-8 rounded-xl flex items-center justify-center text-white font-bold text-sm group-hover:scale-110 transition-transform duration-300"
+                            style={{
+                              background: `linear-gradient(135deg, ${selectedTeacher.color} 0%, ${selectedTeacher.color}dd 100%)`,
+                            }}
+                          >
                             {day.name.charAt(0)}
                           </div>
                           <span className="font-bold text-lg text-perfect group-hover:text-perfect-accent transition-colors duration-300">
@@ -299,18 +301,16 @@ const Dashboard = () => {
                           </span>
                         </div>
                         <div className="flex items-center gap-3">
-                          <span className="text-sm px-3 py-1 rounded-lg bg-violet-100/80 dark:bg-violet-700/70 text-violet-700 dark:text-violet-300 font-bold">
+                          <span className="text-sm px-3 py-1 rounded-lg bg-gray-100/80 text-gray-700 font-bold">
                             {dayLessons?.length || 0}
                           </span>
                           <div
-                            className={`w-6 h-6 rounded-lg bg-violet-200/80 dark:bg-violet-700/80 flex items-center justify-center transition-all duration-300 group-hover:scale-110 ${
-                              isOpen
-                                ? "rotate-180 bg-violet-300/90 dark:bg-violet-600/90"
-                                : ""
+                            className={`w-6 h-6 rounded-lg bg-gray-200/80 flex items-center justify-center transition-all duration-300 group-hover:scale-110 ${
+                              isOpen ? "rotate-180 bg-gray-300/90" : ""
                             }`}
                           >
                             <svg
-                              className="w-3 h-3 text-violet-600 dark:text-violet-300"
+                              className="w-3 h-3 text-gray-600"
                               fill="none"
                               stroke="currentColor"
                               viewBox="0 0 24 24"
@@ -332,19 +332,25 @@ const Dashboard = () => {
                             : "max-h-0 opacity-0"
                         } overflow-hidden`}
                       >
-                        <div className="p-4 bg-gradient-to-br from-white/80 to-violet-50/60 dark:from-violet-900/30 dark:to-purple-900/30">
+                        <div className="p-4 bg-gray-50/30">
                           {dayLessons && dayLessons.length > 0 ? (
                             <div className="space-y-2">
                               {dayLessons.map((lesson, idx) => (
                                 <div
                                   key={lesson.id}
-                                  className="flex items-center gap-3 py-2 px-3 rounded-lg glass-ultra hover:bg-violet-50/30 dark:hover:bg-white/5 transition-all duration-200"
+                                  className="flex items-center gap-3 py-2 px-3 rounded-lg bg-white/90 hover:bg-gray-50/60 transition-all duration-200 border"
+                                  style={{ borderColor: "#e1e1e1" }}
                                 >
-                                  <div className="w-6 h-6 rounded-lg gradient-cyber flex items-center justify-center text-white">
+                                  <div
+                                    className="w-6 h-6 rounded-lg flex items-center justify-center text-white"
+                                    style={{
+                                      background: `linear-gradient(135deg, ${selectedTeacher.color} 0%, ${selectedTeacher.color}dd 100%)`,
+                                    }}
+                                  >
                                     <Clock size={10} />
                                   </div>
                                   <div className="flex-1 min-w-0">
-                                    <div className="text-sm font-bold bg-gradient-to-r from-violet-700 to-purple-600 bg-clip-text text-transparent">
+                                    <div className="text-sm font-bold text-gray-700">
                                       {lesson.time}
                                     </div>
                                     <div className="text-xs text-perfect truncate">
@@ -384,8 +390,8 @@ const Dashboard = () => {
                   return (
                     <div
                       key={day.id}
-                      className="neon-card p-4 hover-glow animate-slide-up"
-                      style={{ animationDelay: `${dayIndex * 120}ms` }}
+                      className="neon-card p-4 hover-glow animate-slide-up border"
+                      style={{ animationDelay: `${dayIndex * 120}ms`, borderColor: '#e1e1e1' }}
                     >
                       <div className="flex items-center justify-between mb-4">
                         <div className="flex items-center gap-2">
@@ -396,7 +402,7 @@ const Dashboard = () => {
                             {day.name}
                           </h3>
                         </div>
-                        <div className="px-2 py-1 rounded-lg bg-violet-100/80 dark:bg-violet-700/70 text-violet-700 dark:text-violet-300 text-xs font-bold">
+                        <div className="px-2 py-1 rounded-lg bg-gray-100/80 text-gray-700 text-xs font-bold">
                           {dayLessons?.length || 0}
                         </div>
                       </div>
@@ -407,13 +413,19 @@ const Dashboard = () => {
                             {dayLessons.map((lesson, idx) => (
                               <div
                                 key={lesson.id}
-                                className="flex items-center gap-2 py-2 px-2 rounded-lg glass-ultra hover:bg-violet-50/40 dark:hover:bg-white/5 transition-all duration-200"
+                                className="flex items-center gap-2 py-2 px-2 rounded-lg bg-white/90 hover:bg-gray-50/60 transition-all duration-200 border"
+                                style={{ borderColor: "#e1e1e1" }}
                               >
-                                <div className="w-5 h-5 rounded-lg gradient-cyber flex items-center justify-center text-white">
+                                <div
+                                  className="w-5 h-5 rounded-lg flex items-center justify-center text-white"
+                                  style={{
+                                    background: `linear-gradient(135deg, ${selectedTeacher.color} 0%, ${selectedTeacher.color}dd 100%)`,
+                                  }}
+                                >
                                   <Clock size={8} />
                                 </div>
                                 <div className="flex-1 min-w-0">
-                                  <div className="text-xs font-bold bg-gradient-to-r from-violet-700 to-purple-600 bg-clip-text text-transparent">
+                                  <div className="text-xs font-bold text-gray-700">
                                     {lesson.time}
                                   </div>
                                   <div className="text-xs text-perfect truncate">
