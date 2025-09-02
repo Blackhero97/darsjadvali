@@ -281,7 +281,7 @@ const Dashboard = () => {
                     <div
                       key={day.id}
                       className="bg-white rounded-xl border overflow-hidden shadow-sm hover:shadow-md hover:bg-gray-50/40 transition-all duration-300"
-                      style={{ borderColor: '#e1e1e1' }}
+                      style={{ borderColor: "#e1e1e1" }}
                     >
                       <button
                         onClick={() => setOpenMobileDay(isOpen ? null : day.id)}
@@ -391,7 +391,10 @@ const Dashboard = () => {
                     <div
                       key={day.id}
                       className="neon-card p-4 hover-glow animate-slide-up border"
-                      style={{ animationDelay: `${dayIndex * 120}ms`, borderColor: '#e1e1e1' }}
+                      style={{
+                        animationDelay: `${dayIndex * 120}ms`,
+                        borderColor: "#e1e1e1",
+                      }}
                     >
                       <div className="flex items-center justify-between mb-4">
                         <div className="flex items-center gap-2">
