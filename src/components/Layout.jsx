@@ -33,15 +33,17 @@ const Layout = ({ children, currentPage, onPageChange }) => {
         customClass: {
           popup: "rounded-2xl border-2 border-violet-200/50",
           title: "text-violet-700 font-bold",
-          confirmButton: "bg-gradient-to-r from-violet-600 to-purple-600 hover:from-violet-700 hover:to-purple-700 text-white font-semibold px-6 py-2 rounded-xl",
-          cancelButton: "bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold px-6 py-2 rounded-xl"
+          confirmButton:
+            "bg-gradient-to-r from-violet-600 to-purple-600 hover:from-violet-700 hover:to-purple-700 text-white font-semibold px-6 py-2 rounded-xl",
+          cancelButton:
+            "bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold px-6 py-2 rounded-xl",
         },
         background: "linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)",
         inputValidator: (value) => {
           if (!value) {
             return "Parol kiritish majburiy!";
           }
-        }
+        },
       });
 
       if (password === "hero1997") {
@@ -54,9 +56,10 @@ const Layout = ({ children, currentPage, onPageChange }) => {
           confirmButtonText: "Qaytadan urinish",
           customClass: {
             popup: "rounded-2xl border-2 border-red-200/50",
-            confirmButton: "bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-semibold px-6 py-2 rounded-xl"
+            confirmButton:
+              "bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-semibold px-6 py-2 rounded-xl",
           },
-          background: "linear-gradient(135deg, #ffffff 0%, #fef2f2 100%)"
+          background: "linear-gradient(135deg, #ffffff 0%, #fef2f2 100%)",
         });
       }
     } else {

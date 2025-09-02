@@ -93,8 +93,8 @@ const Dashboard = () => {
           </div>
         </div>
 
-        {/* Beautiful Gradient Statistics Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        {/* Beautiful Gradient Statistics Cards - Hidden on Mobile */}
+        <div className="hidden md:grid grid-cols-3 gap-4 mb-6">
           <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-500 to-cyan-500 rounded-2xl opacity-75 group-hover:opacity-90 transition-opacity duration-300 blur-sm group-hover:blur-0"></div>
             <div className="relative glass-ultra p-6 rounded-2xl border border-blue-200/50 dark:border-blue-500/20">
