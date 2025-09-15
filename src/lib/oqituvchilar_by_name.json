@@ -2,27 +2,111 @@
   "NURMUHAMMADOV H": [
     {
       "day": "Du",
-      "start": "08:30",
-      "end": "09:15",
-      "group": "kelajak soati"
+      "start": "09:20",
+      "end": "10:05",
+      "group": "7b"
     },
     {
-      "day": "Ju",
-      "start": "08:30",
-      "end": "09:15",
+      "day": "Du",
+      "start": "10:10",
+      "end": "10:55",
+      "group": "8g"
+    },
+    {
+      "day": "Du",
+      "start": "13:20",
+      "end": "14:05",
+      "group": "7b"
+    },
+    {
+      "day": "Du",
+      "start": "14:10",
+      "end": "14:55",
+      "group": "9b"
+    },
+    {
+      "day": "Du",
+      "start": "15:00",
+      "end": "15:45",
       "group": "8b"
     },
     {
       "day": "Du",
-      "start": "09:20",
-      "end": "10:05",
-      "group": "7g"
+      "start": "16:15",
+      "end": "17:00",
+      "group": "6g"
     },
     {
-      "day": "Ju",
-      "start": "09:20",
-      "end": "10:05",
+      "day": "Se",
+      "start": "11:00",
+      "end": "11:45",
+      "group": "6g"
+    },
+    {
+      "day": "Se",
+      "start": "11:50",
+      "end": "12:35",
+      "group": "9b"
+    },
+    {
+      "day": "Se",
+      "start": "13:20",
+      "end": "14:05",
+      "group": "7b"
+    },
+    {
+      "day": "Se",
+      "start": "14:10",
+      "end": "14:55",
+      "group": "7b"
+    },
+    {
+      "day": "Se",
+      "start": "15:00",
+      "end": "15:45",
+      "group": "8g"
+    },
+    {
+      "day": "Se",
+      "start": "16:15",
+      "end": "17:00",
       "group": "8b"
+    },
+    {
+      "day": "Ch",
+      "start": "11:00",
+      "end": "11:45",
+      "group": "6g"
+    },
+    {
+      "day": "Ch",
+      "start": "11:50",
+      "end": "12:35",
+      "group": "8b"
+    },
+    {
+      "day": "Ch",
+      "start": "13:20",
+      "end": "14:05",
+      "group": "7b"
+    },
+    {
+      "day": "Ch",
+      "start": "14:10",
+      "end": "14:55",
+      "group": "9b"
+    },
+    {
+      "day": "Ch",
+      "start": "15:00",
+      "end": "15:45",
+      "group": "8g"
+    },
+    {
+      "day": "Ch",
+      "start": "16:15",
+      "end": "17:00",
+      "group": "7b"
     },
     {
       "day": "Pa",
@@ -31,154 +115,64 @@
       "group": "9b"
     },
     {
+      "day": "Pa",
+      "start": "11:00",
+      "end": "11:45",
+      "group": "8g"
+    },
+    {
+      "day": "Pa",
+      "start": "11:50",
+      "end": "12:35",
+      "group": "8g"
+    },
+    {
+      "day": "Pa",
+      "start": "14:10",
+      "end": "14:55",
+      "group": "6g"
+    },
+    {
+      "day": "Pa",
+      "start": "15:00",
+      "end": "15:45",
+      "group": "8b"
+    },
+    {
+      "day": "Ju",
+      "start": "08:30",
+      "end": "09:15",
+      "group": "8b"
+    },
+    {
+      "day": "Ju",
+      "start": "09:20",
+      "end": "10:05",
+      "group": "6g"
+    },
+    {
       "day": "Ju",
       "start": "10:10",
       "end": "10:55",
       "group": "9b"
     },
     {
-      "day": "Du",
-      "start": "11:00",
-      "end": "11:45",
-      "group": "8g"
-    },
-    {
-      "day": "Se",
-      "start": "11:00",
-      "end": "11:45",
-      "group": "7b"
-    },
-    {
-      "day": "Pa",
-      "start": "11:00",
-      "end": "11:45",
-      "group": "8g"
-    },
-    {
       "day": "Ju",
       "start": "11:00",
       "end": "11:45",
       "group": "8g"
     },
     {
-      "day": "Se",
-      "start": "11:50",
-      "end": "12:35",
-      "group": "9b"
-    },
-    {
-      "day": "Ch",
-      "start": "11:50",
-      "end": "12:35",
-      "group": "8b"
-    },
-    {
-      "day": "Pa",
-      "start": "11:50",
-      "end": "12:35",
-      "group": "8g"
-    },
-    {
-      "day": "Du",
-      "start": "13:20",
-      "end": "14:05",
-      "group": "7g"
-    },
-    {
-      "day": "Se",
-      "start": "13:20",
-      "end": "14:05",
-      "group": "7g"
-    },
-    {
-      "day": "Ch",
-      "start": "13:20",
-      "end": "14:05",
-      "group": "7g"
-    },
-    {
-      "day": "Pa",
-      "start": "13:20",
-      "end": "14:05",
-      "group": "8b"
-    },
-    {
-      "day": "Du",
-      "start": "14:10",
-      "end": "14:55",
-      "group": "9b"
-    },
-    {
-      "day": "Se",
-      "start": "14:10",
-      "end": "14:55",
-      "group": "7g"
-    },
-    {
-      "day": "Ch",
-      "start": "14:10",
-      "end": "14:55",
-      "group": "9b"
-    },
-    {
-      "day": "Pa",
-      "start": "14:10",
-      "end": "14:55",
-      "group": "7b"
-    },
-    {
       "day": "Ju",
       "start": "14:10",
       "end": "14:55",
-      "group": "7b"
-    },
-    {
-      "day": "Du",
-      "start": "15:00",
-      "end": "15:45",
-      "group": "8b"
-    },
-    {
-      "day": "Se",
-      "start": "15:00",
-      "end": "15:45",
-      "group": "8g"
-    },
-    {
-      "day": "Ch",
-      "start": "15:00",
-      "end": "15:45",
-      "group": "8g"
-    },
-    {
-      "day": "Pa",
-      "start": "15:00",
-      "end": "15:45",
-      "group": "7b"
+      "group": "6g"
     },
     {
       "day": "Ju",
       "start": "15:00",
       "end": "15:45",
-      "group": "7b"
-    },
-    {
-      "day": "Du",
-      "start": "16:15",
-      "end": "17:00",
-      "group": "7b"
-    },
-    {
-      "day": "Se",
-      "start": "16:15",
-      "end": "17:00",
       "group": "8b"
-    },
-    {
-      "day": "Pa",
-      "start": "16:15",
-      "end": "17:00",
-      "group": "7g"
     },
     {
       "day": "Ju",
@@ -190,392 +184,200 @@
   "YUSUFJONOVA M": [
     {
       "day": "Du",
-      "start": "08:30",
-      "end": "09:15",
-      "group": "kelajak soati"
-    },
-    {
-      "day": "Se",
-      "start": "08:30",
-      "end": "09:15",
-      "group": "8g"
-    },
-    {
-      "day": "Ch",
-      "start": "08:30",
-      "end": "09:15",
-      "group": "8g"
-    },
-    {
-      "day": "Pa",
-      "start": "08:30",
-      "end": "09:15",
-      "group": "7g"
-    },
-    {
-      "day": "Ju",
-      "start": "08:30",
-      "end": "09:15",
-      "group": "8g"
-    },
-    {
-      "day": "Du",
-      "start": "09:20",
-      "end": "10:05",
-      "group": "8g"
-    },
-    {
-      "day": "Se",
-      "start": "09:20",
-      "end": "10:05",
-      "group": "7b"
-    },
-    {
-      "day": "Ch",
-      "start": "09:20",
-      "end": "10:05",
-      "group": "7g"
-    },
-    {
-      "day": "Pa",
-      "start": "09:20",
-      "end": "10:05",
-      "group": "1t"
-    },
-    {
-      "day": "Ju",
       "start": "09:20",
       "end": "10:05",
       "group": "8g"
     },
     {
       "day": "Du",
-      "start": "10:10",
-      "end": "10:55",
-      "group": "8g"
-    },
-    {
-      "day": "Se",
-      "start": "10:10",
-      "end": "10:55",
-      "group": "8b"
-    },
-    {
-      "day": "Ch",
-      "start": "10:10",
-      "end": "10:55",
-      "group": "8g"
-    },
-    {
-      "day": "Pa",
-      "start": "10:10",
-      "end": "10:55",
-      "group": "7b"
-    },
-    {
-      "day": "Ju",
-      "start": "10:10",
-      "end": "10:55",
-      "group": "8b"
-    },
-    {
-      "day": "Se",
       "start": "11:00",
       "end": "11:45",
       "group": "8b"
-    },
-    {
-      "day": "Ch",
-      "start": "11:00",
-      "end": "11:45",
-      "group": "8b"
-    },
-    {
-      "day": "Pa",
-      "start": "11:00",
-      "end": "11:45",
-      "group": "7g"
-    },
-    {
-      "day": "Ju",
-      "start": "11:00",
-      "end": "11:45",
-      "group": "1t"
     },
     {
       "day": "Du",
       "start": "11:50",
       "end": "12:35",
-      "group": "7b"
+      "group": "6g"
     },
     {
-      "day": "Se",
-      "start": "11:50",
-      "end": "12:35",
-      "group": "7g"
-    },
-    {
-      "day": "Ch",
-      "start": "11:50",
-      "end": "12:35",
-      "group": "7b"
-    },
-    {
-      "day": "Se",
+      "day": "Du",
       "start": "13:20",
       "end": "14:05",
-      "group": "7b"
-    },
-    {
-      "day": "Pa",
-      "start": "13:20",
-      "end": "14:05",
-      "group": "1t"
-    },
-    {
-      "day": "Ju",
-      "start": "13:20",
-      "end": "14:05",
-      "group": "8b"
+      "group": "8g"
     },
     {
       "day": "Du",
       "start": "14:10",
       "end": "14:55",
-      "group": "7g"
+      "group": "7b"
+    },
+    {
+      "day": "Du",
+      "start": "15:00",
+      "end": "15:45",
+      "group": "6g"
+    },
+    {
+      "day": "Du",
+      "start": "16:15",
+      "end": "17:00",
+      "group": "7b"
+    },
+    {
+      "day": "Se",
+      "start": "08:30",
+      "end": "09:15",
+      "group": "8g"
+    },
+    {
+      "day": "Se",
+      "start": "09:20",
+      "end": "10:05",
+      "group": "6g"
+    },
+    {
+      "day": "Se",
+      "start": "10:10",
+      "end": "10:55",
+      "group": "8b"
+    },
+    {
+      "day": "Se",
+      "start": "11:00",
+      "end": "11:45",
+      "group": "8b"
+    },
+    {
+      "day": "Se",
+      "start": "11:50",
+      "end": "12:35",
+      "group": "7b"
     },
     {
       "day": "Ch",
+      "start": "08:30",
+      "end": "09:15",
+      "group": "8g"
+    },
+    {
+      "day": "Ch",
+      "start": "09:20",
+      "end": "10:05",
+      "group": "7b"
+    },
+    {
+      "day": "Ch",
+      "start": "10:10",
+      "end": "10:55",
+      "group": "8g"
+    },
+    {
+      "day": "Ch",
+      "start": "11:00",
+      "end": "11:45",
+      "group": "8b"
+    },
+    {
+      "day": "Ch",
+      "start": "11:50",
+      "end": "12:35",
+      "group": "6g"
+    },
+    {
+      "day": "Pa",
+      "start": "08:30",
+      "end": "09:15",
+      "group": "7b"
+    },
+    {
+      "day": "Pa",
+      "start": "09:20",
+      "end": "10:05",
+      "group": "6g"
+    },
+    {
+      "day": "Pa",
+      "start": "10:10",
+      "end": "10:55",
+      "group": "6g"
+    },
+    {
+      "day": "Pa",
+      "start": "11:00",
+      "end": "11:45",
+      "group": "7b"
+    },
+    {
+      "day": "Pa",
+      "start": "11:50",
+      "end": "12:35",
+      "group": "8b"
+    },
+    {
+      "day": "Pa",
+      "start": "13:20",
+      "end": "14:05",
+      "group": "8g"
+    },
+    {
+      "day": "Pa",
       "start": "14:10",
       "end": "14:55",
       "group": "8b"
     },
     {
       "day": "Pa",
-      "start": "14:10",
-      "end": "14:55",
+      "start": "15:00",
+      "end": "15:45",
+      "group": "8g"
+    },
+    {
+      "day": "Pa",
+      "start": "16:15",
+      "end": "17:00",
+      "group": "7b"
+    },
+    {
+      "day": "Ju",
+      "start": "08:30",
+      "end": "09:15",
       "group": "8g"
     },
     {
       "day": "Ju",
-      "start": "14:10",
-      "end": "14:55",
-      "group": "7g"
-    },
-    {
-      "day": "Du",
-      "start": "15:00",
-      "end": "15:45",
-      "group": "7b"
-    },
-    {
-      "day": "Se",
-      "start": "15:00",
-      "end": "15:45",
-      "group": "1t"
-    },
-    {
-      "day": "Ch",
-      "start": "15:00",
-      "end": "15:45",
-      "group": "7b"
-    },
-    {
-      "day": "Pa",
-      "start": "15:00",
-      "end": "15:45",
+      "start": "09:20",
+      "end": "10:05",
       "group": "8b"
     },
     {
       "day": "Ju",
-      "start": "15:00",
-      "end": "15:45",
-      "group": "7g"
-    },
-    {
-      "day": "Du",
-      "start": "16:15",
-      "end": "17:00",
-      "group": "8b"
-    },
-    {
-      "day": "Se",
-      "start": "16:15",
-      "end": "17:00",
-      "group": "1t"
-    },
-    {
-      "day": "Ch",
-      "start": "16:15",
-      "end": "17:00",
-      "group": "7g"
-    },
-    {
-      "day": "Pa",
-      "start": "16:15",
-      "end": "17:00",
-      "group": "1t"
+      "start": "10:10",
+      "end": "10:55",
+      "group": "6g"
     },
     {
       "day": "Ju",
-      "start": "16:15",
-      "end": "17:00",
+      "start": "11:00",
+      "end": "11:45",
+      "group": "8b"
+    },
+    {
+      "day": "Ju",
+      "start": "11:50",
+      "end": "12:35",
       "group": "7b"
     }
   ],
   "QORABOYEVA N": [
     {
       "day": "Du",
-      "start": "08:30",
-      "end": "09:15",
-      "group": "kelajak soati"
-    },
-    {
-      "day": "Se",
-      "start": "08:30",
-      "end": "09:15",
-      "group": "10b"
-    },
-    {
-      "day": "Ch",
-      "start": "08:30",
-      "end": "09:15",
-      "group": "11b"
-    },
-    {
-      "day": "Pa",
-      "start": "08:30",
-      "end": "09:15",
-      "group": "10b"
-    },
-    {
-      "day": "Ju",
-      "start": "08:30",
-      "end": "09:15",
-      "group": "10b"
-    },
-    {
-      "day": "Du",
-      "start": "09:20",
-      "end": "10:05",
-      "group": "10b"
-    },
-    {
-      "day": "Se",
-      "start": "09:20",
-      "end": "10:05",
-      "group": "11b"
-    },
-    {
-      "day": "Ch",
-      "start": "09:20",
-      "end": "10:05",
-      "group": "11b"
-    },
-    {
-      "day": "Ju",
-      "start": "09:20",
-      "end": "10:05",
-      "group": "11b"
-    },
-    {
-      "day": "Du",
-      "start": "10:10",
-      "end": "10:55",
-      "group": "11b"
-    },
-    {
-      "day": "Se",
-      "start": "10:10",
-      "end": "10:55",
-      "group": "10b"
-    },
-    {
-      "day": "Ju",
-      "start": "10:10",
-      "end": "10:55",
-      "group": "11b"
-    },
-    {
-      "day": "Du",
-      "start": "11:00",
-      "end": "11:45",
-      "group": "10b"
-    },
-    {
-      "day": "Se",
-      "start": "11:00",
-      "end": "11:45",
-      "group": "10b"
-    },
-    {
-      "day": "Ch",
-      "start": "11:00",
-      "end": "11:45",
-      "group": "10b"
-    },
-    {
-      "day": "Ju",
-      "start": "11:00",
-      "end": "11:45",
-      "group": "10b"
-    },
-    {
-      "day": "Du",
       "start": "11:50",
       "end": "12:35",
       "group": "11b"
     },
     {
-      "day": "Se",
-      "start": "11:50",
-      "end": "12:35",
-      "group": "11b"
-    },
-    {
-      "day": "Ch",
-      "start": "11:50",
-      "end": "12:35",
-      "group": "10b"
-    },
-    {
-      "day": "Pa",
-      "start": "11:50",
-      "end": "12:35",
-      "group": "10b"
-    },
-    {
-      "day": "Ju",
-      "start": "11:50",
-      "end": "12:35",
-      "group": "10b"
-    },
-    {
       "day": "Du",
-      "start": "13:20",
-      "end": "14:05",
-      "group": "11b"
-    },
-    {
-      "day": "Se",
-      "start": "13:20",
-      "end": "14:05",
-      "group": "11b"
-    },
-    {
-      "day": "Ch",
-      "start": "13:20",
-      "end": "14:05",
-      "group": "11b"
-    },
-    {
-      "day": "Pa",
-      "start": "13:20",
-      "end": "14:05",
-      "group": "10b"
-    },
-    {
-      "day": "Ju",
       "start": "13:20",
       "end": "14:05",
       "group": "11b"
@@ -584,30 +386,60 @@
       "day": "Du",
       "start": "14:10",
       "end": "14:55",
-      "group": "10b"
-    },
-    {
-      "day": "Ch",
-      "start": "14:10",
-      "end": "14:55",
-      "group": "10b"
-    },
-    {
-      "day": "Pa",
-      "start": "14:10",
-      "end": "14:55",
       "group": "11b"
     },
     {
-      "day": "Ju",
-      "start": "14:10",
-      "end": "14:55",
+      "day": "Du",
+      "start": "15:00",
+      "end": "15:45",
+      "group": "11b"
+    },
+    {
+      "day": "Se",
+      "start": "08:30",
+      "end": "09:15",
+      "group": "11b"
+    },
+    {
+      "day": "Se",
+      "start": "09:20",
+      "end": "10:05",
+      "group": "11b"
+    },
+    {
+      "day": "Se",
+      "start": "11:50",
+      "end": "12:35",
       "group": "11b"
     },
     {
       "day": "Se",
       "start": "15:00",
       "end": "15:45",
+      "group": "11b"
+    },
+    {
+      "day": "Ch",
+      "start": "13:20",
+      "end": "14:05",
+      "group": "11b"
+    },
+    {
+      "day": "Ch",
+      "start": "14:10",
+      "end": "14:55",
+      "group": "11b"
+    },
+    {
+      "day": "Ch",
+      "start": "15:00",
+      "end": "15:45",
+      "group": "11b"
+    },
+    {
+      "day": "Pa",
+      "start": "13:20",
+      "end": "14:05",
       "group": "11b"
     },
     {
@@ -618,9 +450,27 @@
     },
     {
       "day": "Ju",
+      "start": "11:50",
+      "end": "12:35",
+      "group": "11b"
+    },
+    {
+      "day": "Ju",
+      "start": "13:20",
+      "end": "14:05",
+      "group": "11b"
+    },
+    {
+      "day": "Ju",
+      "start": "14:10",
+      "end": "14:55",
+      "group": "11b"
+    },
+    {
+      "day": "Ju",
       "start": "15:00",
       "end": "15:45",
-      "group": "10b"
+      "group": "11b"
     }
   ],
   "SAMIYEVA G": [
@@ -628,42 +478,30 @@
       "day": "Du",
       "start": "08:30",
       "end": "09:15",
-      "group": "kelajak soati"
+      "group": "11b"
     },
     {
       "day": "Du",
       "start": "10:10",
       "end": "10:55",
-      "group": "10b"
-    },
-    {
-      "day": "Se",
-      "start": "10:10",
-      "end": "10:55",
       "group": "11b"
-    },
-    {
-      "day": "Ch",
-      "start": "10:10",
-      "end": "10:55",
-      "group": "10b"
-    },
-    {
-      "day": "Pa",
-      "start": "10:10",
-      "end": "10:55",
-      "group": "11b"
-    },
-    {
-      "day": "Ju",
-      "start": "10:10",
-      "end": "10:55",
-      "group": "10b"
     },
     {
       "day": "Du",
       "start": "11:00",
       "end": "11:45",
+      "group": "11b"
+    },
+    {
+      "day": "Se",
+      "start": "08:30",
+      "end": "09:15",
+      "group": "11b"
+    },
+    {
+      "day": "Se",
+      "start": "10:10",
+      "end": "10:55",
       "group": "11b"
     },
     {
@@ -674,15 +512,45 @@
     },
     {
       "day": "Ch",
+      "start": "08:30",
+      "end": "09:15",
+      "group": "11b"
+    },
+    {
+      "day": "Ch",
+      "start": "10:10",
+      "end": "10:55",
+      "group": "11b"
+    },
+    {
+      "day": "Ch",
       "start": "11:00",
       "end": "11:45",
       "group": "11b"
     },
     {
       "day": "Pa",
-      "start": "11:00",
-      "end": "11:45",
-      "group": "10b"
+      "start": "08:30",
+      "end": "09:15",
+      "group": "11b"
+    },
+    {
+      "day": "Pa",
+      "start": "10:10",
+      "end": "10:55",
+      "group": "11b"
+    },
+    {
+      "day": "Ju",
+      "start": "08:30",
+      "end": "09:15",
+      "group": "11b"
+    },
+    {
+      "day": "Ju",
+      "start": "10:10",
+      "end": "10:55",
+      "group": "11b"
     },
     {
       "day": "Ju",
@@ -691,186 +559,18 @@
       "group": "11b"
     },
     {
-      "day": "Du",
+      "day": "Ju",
       "start": "11:50",
       "end": "12:35",
-      "group": "10b"
-    },
-    {
-      "day": "Se",
-      "start": "11:50",
-      "end": "12:35",
-      "group": "10b"
-    },
-    {
-      "day": "Pa",
-      "start": "11:50",
-      "end": "12:35",
-      "group": "11b"
-    },
-    {
-      "day": "Ju",
-      "start": "11:50",
-      "end": "12:35",
-      "group": "11b"
-    },
-    {
-      "day": "Du",
-      "start": "13:20",
-      "end": "14:05",
-      "group": "10b"
-    },
-    {
-      "day": "Se",
-      "start": "13:20",
-      "end": "14:05",
-      "group": "10b"
-    },
-    {
-      "day": "Ch",
-      "start": "13:20",
-      "end": "14:05",
-      "group": "10b"
-    },
-    {
-      "day": "Pa",
-      "start": "13:20",
-      "end": "14:05",
-      "group": "11b"
-    },
-    {
-      "day": "Ju",
-      "start": "13:20",
-      "end": "14:05",
-      "group": "10b"
-    },
-    {
-      "day": "Du",
-      "start": "14:10",
-      "end": "14:55",
-      "group": "11b"
-    },
-    {
-      "day": "Se",
-      "start": "14:10",
-      "end": "14:55",
-      "group": "11b"
-    },
-    {
-      "day": "Ch",
-      "start": "14:10",
-      "end": "14:55",
-      "group": "11b"
-    },
-    {
-      "day": "Pa",
-      "start": "14:10",
-      "end": "14:55",
-      "group": "10b"
-    },
-    {
-      "day": "Ju",
-      "start": "14:10",
-      "end": "14:55",
-      "group": "10b"
-    },
-    {
-      "day": "Du",
-      "start": "15:00",
-      "end": "15:45",
-      "group": "10b"
-    },
-    {
-      "day": "Se",
-      "start": "15:00",
-      "end": "15:45",
-      "group": "10b"
-    },
-    {
-      "day": "Ch",
-      "start": "15:00",
-      "end": "15:45",
-      "group": "10b"
-    },
-    {
-      "day": "Pa",
-      "start": "15:00",
-      "end": "15:45",
-      "group": "10b"
-    },
-    {
-      "day": "Ju",
-      "start": "15:00",
-      "end": "15:45",
-      "group": "11b"
-    },
-    {
-      "day": "Du",
-      "start": "16:15",
-      "end": "17:00",
-      "group": "11b"
-    },
-    {
-      "day": "Ch",
-      "start": "16:15",
-      "end": "17:00",
-      "group": "11b"
-    },
-    {
-      "day": "Ju",
-      "start": "16:15",
-      "end": "17:00",
       "group": "11b"
     }
   ],
   "IBRAGIMOV S": [
     {
       "day": "Du",
-      "start": "08:30",
-      "end": "09:15",
-      "group": "kelajak soati"
-    },
-    {
-      "day": "Se",
-      "start": "08:30",
-      "end": "09:15",
-      "group": "7b"
-    },
-    {
-      "day": "Ch",
-      "start": "08:30",
-      "end": "09:15",
-      "group": "7g"
-    },
-    {
-      "day": "Ju",
-      "start": "08:30",
-      "end": "09:15",
-      "group": "4b"
-    },
-    {
-      "day": "Du",
       "start": "09:20",
       "end": "10:05",
-      "group": "6b"
-    },
-    {
-      "day": "Se",
-      "start": "09:20",
-      "end": "10:05",
-      "group": "6b"
-    },
-    {
-      "day": "Ch",
-      "start": "09:20",
-      "end": "10:05",
-      "group": "4b"
-    },
-    {
-      "day": "Ju",
-      "start": "09:20",
-      "end": "10:05",
-      "group": "4b"
+      "group": "6g"
     },
     {
       "day": "Du",
@@ -879,118 +579,154 @@
       "group": "9b"
     },
     {
-      "day": "Se",
-      "start": "10:10",
-      "end": "10:55",
-      "group": "7g"
-    },
-    {
-      "day": "Ju",
-      "start": "10:10",
-      "end": "10:55",
-      "group": "7b"
-    },
-    {
       "day": "Du",
       "start": "11:00",
       "end": "11:45",
       "group": "4b"
     },
     {
-      "day": "Se",
-      "start": "11:00",
-      "end": "11:45",
-      "group": "4b"
-    },
-    {
-      "day": "Ju",
-      "start": "11:00",
-      "end": "11:45",
-      "group": "8b"
-    },
-    {
       "day": "Du",
       "start": "11:50",
       "end": "12:35",
-      "group": "8b"
-    },
-    {
-      "day": "Ch",
-      "start": "11:50",
-      "end": "12:35",
-      "group": "6b"
-    },
-    {
-      "day": "Du",
-      "start": "13:20",
-      "end": "14:05",
       "group": "8g"
     },
     {
-      "day": "Se",
-      "start": "13:20",
-      "end": "14:05",
-      "group": "5b"
-    },
-    {
-      "day": "Ch",
-      "start": "13:20",
-      "end": "14:05",
-      "group": "4b"
-    },
-    {
       "day": "Du",
       "start": "14:10",
       "end": "14:55",
       "group": "5b"
-    },
-    {
-      "day": "Ch",
-      "start": "14:10",
-      "end": "14:55",
-      "group": "7g"
-    },
-    {
-      "day": "Ju",
-      "start": "14:10",
-      "end": "14:55",
-      "group": "9b"
     },
     {
       "day": "Du",
       "start": "15:00",
       "end": "15:45",
       "group": "4b"
+    },
+    {
+      "day": "Du",
+      "start": "16:15",
+      "end": "17:00",
+      "group": "8b"
+    },
+    {
+      "day": "Se",
+      "start": "08:30",
+      "end": "09:15",
+      "group": "6b"
+    },
+    {
+      "day": "Se",
+      "start": "09:20",
+      "end": "10:05",
+      "group": "6b"
+    },
+    {
+      "day": "Se",
+      "start": "10:10",
+      "end": "10:55",
+      "group": "7b"
+    },
+    {
+      "day": "Se",
+      "start": "11:00",
+      "end": "11:45",
+      "group": "4b"
+    },
+    {
+      "day": "Se",
+      "start": "11:50",
+      "end": "12:35",
+      "group": "5b"
     },
     {
       "day": "Se",
       "start": "15:00",
       "end": "15:45",
       "group": "8b"
-    },
-    {
-      "day": "Ch",
-      "start": "15:00",
-      "end": "15:45",
-      "group": "9b"
-    },
-    {
-      "day": "Ju",
-      "start": "15:00",
-      "end": "15:45",
-      "group": "5b"
     },
     {
       "day": "Se",
       "start": "16:15",
       "end": "17:00",
+      "group": "6g"
+    },
+    {
+      "day": "Ch",
+      "start": "08:30",
+      "end": "09:15",
       "group": "7b"
+    },
+    {
+      "day": "Ch",
+      "start": "09:20",
+      "end": "10:05",
+      "group": "4b"
+    },
+    {
+      "day": "Ch",
+      "start": "11:50",
+      "end": "12:35",
+      "group": "6b"
+    },
+    {
+      "day": "Ch",
+      "start": "13:20",
+      "end": "14:05",
+      "group": "4b"
+    },
+    {
+      "day": "Ch",
+      "start": "14:10",
+      "end": "14:55",
+      "group": "7b"
+    },
+    {
+      "day": "Ch",
+      "start": "15:00",
+      "end": "15:45",
+      "group": "9b"
     },
     {
       "day": "Ch",
       "start": "16:15",
       "end": "17:00",
       "group": "8g"
+    },
+    {
+      "day": "Ju",
+      "start": "08:30",
+      "end": "09:15",
+      "group": "4b"
+    },
+    {
+      "day": "Ju",
+      "start": "09:20",
+      "end": "10:05",
+      "group": "4b"
+    },
+    {
+      "day": "Ju",
+      "start": "10:10",
+      "end": "10:55",
+      "group": "8b"
+    },
+    {
+      "day": "Ju",
+      "start": "11:00",
+      "end": "11:45",
+      "group": "6g"
+    },
+    {
+      "day": "Ju",
+      "start": "14:10",
+      "end": "14:55",
+      "group": "9b"
+    },
+    {
+      "day": "Ju",
+      "start": "15:00",
+      "end": "15:45",
+      "group": "5b"
     },
     {
       "day": "Ju",
@@ -1002,48 +738,6 @@
   "ABBOSOVA S": [
     {
       "day": "Du",
-      "start": "08:30",
-      "end": "09:15",
-      "group": "kelajak soati"
-    },
-    {
-      "day": "Se",
-      "start": "08:30",
-      "end": "09:15",
-      "group": "1g"
-    },
-    {
-      "day": "Ch",
-      "start": "08:30",
-      "end": "09:15",
-      "group": "1g"
-    },
-    {
-      "day": "Pa",
-      "start": "08:30",
-      "end": "09:15",
-      "group": "1g"
-    },
-    {
-      "day": "Ju",
-      "start": "08:30",
-      "end": "09:15",
-      "group": "1g"
-    },
-    {
-      "day": "Du",
-      "start": "09:20",
-      "end": "10:05",
-      "group": "1g"
-    },
-    {
-      "day": "Se",
-      "start": "09:20",
-      "end": "10:05",
-      "group": "1g"
-    },
-    {
-      "day": "Pa",
       "start": "09:20",
       "end": "10:05",
       "group": "1g"
@@ -1055,55 +749,13 @@
       "group": "1g"
     },
     {
-      "day": "Ch",
-      "start": "10:10",
-      "end": "10:55",
-      "group": "1g"
-    },
-    {
-      "day": "Pa",
-      "start": "10:10",
-      "end": "10:55",
-      "group": "1g"
-    },
-    {
       "day": "Du",
       "start": "11:00",
       "end": "11:45",
       "group": "1g"
     },
     {
-      "day": "Se",
-      "start": "11:00",
-      "end": "11:45",
-      "group": "1g"
-    },
-    {
-      "day": "Ch",
-      "start": "11:00",
-      "end": "11:45",
-      "group": "1g"
-    },
-    {
-      "day": "Pa",
-      "start": "11:00",
-      "end": "11:45",
-      "group": "1g"
-    },
-    {
-      "day": "Ju",
-      "start": "11:00",
-      "end": "11:45",
-      "group": "1g"
-    },
-    {
       "day": "Du",
-      "start": "11:50",
-      "end": "12:35",
-      "group": "1g"
-    },
-    {
-      "day": "Pa",
       "start": "11:50",
       "end": "12:35",
       "group": "1g"
@@ -1116,21 +768,27 @@
     },
     {
       "day": "Se",
-      "start": "13:20",
-      "end": "14:05",
-      "group": "1b"
-    },
-    {
-      "day": "Ch",
-      "start": "14:10",
-      "end": "14:55",
+      "start": "08:30",
+      "end": "09:15",
       "group": "1g"
     },
     {
-      "day": "Ch",
-      "start": "15:00",
-      "end": "15:45",
-      "group": "3b"
+      "day": "Se",
+      "start": "09:20",
+      "end": "10:05",
+      "group": "1g"
+    },
+    {
+      "day": "Se",
+      "start": "11:00",
+      "end": "11:45",
+      "group": "1g"
+    },
+    {
+      "day": "Se",
+      "start": "13:20",
+      "end": "14:05",
+      "group": "1b"
     },
     {
       "day": "Se",
@@ -1140,56 +798,92 @@
     },
     {
       "day": "Ch",
+      "start": "08:30",
+      "end": "09:15",
+      "group": "1g"
+    },
+    {
+      "day": "Ch",
+      "start": "09:20",
+      "end": "10:05",
+      "group": "1g"
+    },
+    {
+      "day": "Ch",
+      "start": "10:10",
+      "end": "10:55",
+      "group": "1g"
+    },
+    {
+      "day": "Ch",
+      "start": "11:00",
+      "end": "11:45",
+      "group": "1g"
+    },
+    {
+      "day": "Ch",
+      "start": "14:10",
+      "end": "14:55",
+      "group": "3b"
+    },
+    {
+      "day": "Ch",
+      "start": "15:00",
+      "end": "15:45",
+      "group": "1g"
+    },
+    {
+      "day": "Ch",
       "start": "16:15",
       "end": "17:00",
+      "group": "1g"
+    },
+    {
+      "day": "Pa",
+      "start": "08:30",
+      "end": "09:15",
+      "group": "1g"
+    },
+    {
+      "day": "Pa",
+      "start": "09:20",
+      "end": "10:05",
+      "group": "1g"
+    },
+    {
+      "day": "Pa",
+      "start": "10:10",
+      "end": "10:55",
+      "group": "1g"
+    },
+    {
+      "day": "Pa",
+      "start": "11:00",
+      "end": "11:45",
+      "group": "1g"
+    },
+    {
+      "day": "Pa",
+      "start": "11:50",
+      "end": "12:35",
+      "group": "1g"
+    },
+    {
+      "day": "Ju",
+      "start": "08:30",
+      "end": "09:15",
+      "group": "1g"
+    },
+    {
+      "day": "Ju",
+      "start": "11:00",
+      "end": "11:45",
       "group": "1g"
     }
   ],
   "MUSAYEVA N": [
     {
       "day": "Du",
-      "start": "08:30",
-      "end": "09:15",
-      "group": "kelajak soati"
-    },
-    {
-      "day": "Se",
-      "start": "08:30",
-      "end": "09:15",
-      "group": "8b"
-    },
-    {
-      "day": "Ch",
-      "start": "08:30",
-      "end": "09:15",
-      "group": "5b"
-    },
-    {
-      "day": "Pa",
-      "start": "08:30",
-      "end": "09:15",
-      "group": "8g"
-    },
-    {
-      "day": "Du",
-      "start": "09:20",
-      "end": "10:05",
-      "group": "8b"
-    },
-    {
-      "day": "Se",
-      "start": "09:20",
-      "end": "10:05",
-      "group": "8g"
-    },
-    {
-      "day": "Ch",
-      "start": "09:20",
-      "end": "10:05",
-      "group": "8b"
-    },
-    {
-      "day": "Pa",
       "start": "09:20",
       "end": "10:05",
       "group": "8b"
@@ -1201,64 +895,10 @@
       "group": "8b"
     },
     {
-      "day": "Ch",
-      "start": "10:10",
-      "end": "10:55",
-      "group": "5b"
-    },
-    {
-      "day": "Pa",
-      "start": "10:10",
-      "end": "10:55",
-      "group": "8g"
-    },
-    {
-      "day": "Ju",
-      "start": "10:10",
-      "end": "10:55",
-      "group": "5b"
-    },
-    {
-      "day": "Se",
+      "day": "Du",
       "start": "11:00",
       "end": "11:45",
-      "group": "5b"
-    },
-    {
-      "day": "Pa",
-      "start": "11:00",
-      "end": "11:45",
-      "group": "5b"
-    },
-    {
-      "day": "Du",
-      "start": "11:50",
-      "end": "12:35",
       "group": "8g"
-    },
-    {
-      "day": "Se",
-      "start": "11:50",
-      "end": "12:35",
-      "group": "8g"
-    },
-    {
-      "day": "Ch",
-      "start": "11:50",
-      "end": "12:35",
-      "group": "8g"
-    },
-    {
-      "day": "Pa",
-      "start": "11:50",
-      "end": "12:35",
-      "group": "5b"
-    },
-    {
-      "day": "Ju",
-      "start": "11:50",
-      "end": "12:35",
-      "group": "8b"
     },
     {
       "day": "Du",
@@ -1267,64 +907,154 @@
       "group": "5b"
     },
     {
-      "day": "Se",
-      "start": "13:20",
-      "end": "14:05",
-      "group": "8g"
-    },
-    {
-      "day": "Ju",
-      "start": "13:20",
-      "end": "14:05",
-      "group": "8g"
-    },
-    {
       "day": "Du",
       "start": "14:10",
       "end": "14:55",
       "group": "8g"
-    },
-    {
-      "day": "Se",
-      "start": "14:10",
-      "end": "14:55",
-      "group": "8b"
-    },
-    {
-      "day": "Ch",
-      "start": "14:10",
-      "end": "14:55",
-      "group": "5b"
-    },
-    {
-      "day": "Pa",
-      "start": "14:10",
-      "end": "14:55",
-      "group": "8b"
-    },
-    {
-      "day": "Ju",
-      "start": "14:10",
-      "end": "14:55",
-      "group": "8g"
-    },
-    {
-      "day": "Ch",
-      "start": "15:00",
-      "end": "15:45",
-      "group": "8b"
-    },
-    {
-      "day": "Ju",
-      "start": "15:00",
-      "end": "15:45",
-      "group": "8b"
     },
     {
       "day": "Du",
       "start": "16:15",
       "end": "17:00",
       "group": "5b"
+    },
+    {
+      "day": "Se",
+      "start": "08:30",
+      "end": "09:15",
+      "group": "8b"
+    },
+    {
+      "day": "Se",
+      "start": "09:20",
+      "end": "10:05",
+      "group": "8g"
+    },
+    {
+      "day": "Se",
+      "start": "10:10",
+      "end": "10:55",
+      "group": "5b"
+    },
+    {
+      "day": "Se",
+      "start": "11:00",
+      "end": "11:45",
+      "group": "5b"
+    },
+    {
+      "day": "Se",
+      "start": "11:50",
+      "end": "12:35",
+      "group": "8g"
+    },
+    {
+      "day": "Se",
+      "start": "13:20",
+      "end": "14:05",
+      "group": "8g"
+    },
+    {
+      "day": "Se",
+      "start": "14:10",
+      "end": "14:55",
+      "group": "8b"
+    },
+    {
+      "day": "Ch",
+      "start": "08:30",
+      "end": "09:15",
+      "group": "5b"
+    },
+    {
+      "day": "Ch",
+      "start": "09:20",
+      "end": "10:05",
+      "group": "8b"
+    },
+    {
+      "day": "Ch",
+      "start": "10:10",
+      "end": "10:55",
+      "group": "5b"
+    },
+    {
+      "day": "Ch",
+      "start": "11:50",
+      "end": "12:35",
+      "group": "8g"
+    },
+    {
+      "day": "Ch",
+      "start": "14:10",
+      "end": "14:55",
+      "group": "8b"
+    },
+    {
+      "day": "Pa",
+      "start": "08:30",
+      "end": "09:15",
+      "group": "8g"
+    },
+    {
+      "day": "Pa",
+      "start": "09:20",
+      "end": "10:05",
+      "group": "8b"
+    },
+    {
+      "day": "Pa",
+      "start": "10:10",
+      "end": "10:55",
+      "group": "8g"
+    },
+    {
+      "day": "Pa",
+      "start": "11:00",
+      "end": "11:45",
+      "group": "5b"
+    },
+    {
+      "day": "Pa",
+      "start": "11:50",
+      "end": "12:35",
+      "group": "5b"
+    },
+    {
+      "day": "Pa",
+      "start": "13:20",
+      "end": "14:05",
+      "group": "8b"
+    },
+    {
+      "day": "Ju",
+      "start": "10:10",
+      "end": "10:55",
+      "group": "5b"
+    },
+    {
+      "day": "Ju",
+      "start": "11:50",
+      "end": "12:35",
+      "group": "8b"
+    },
+    {
+      "day": "Ju",
+      "start": "13:20",
+      "end": "14:05",
+      "group": "8b"
+    },
+    {
+      "day": "Ju",
+      "start": "14:10",
+      "end": "14:55",
+      "group": "8g"
+    },
+    {
+      "day": "Ju",
+      "start": "15:00",
+      "end": "15:45",
+      "group": "8g"
     },
     {
       "day": "Ju",
