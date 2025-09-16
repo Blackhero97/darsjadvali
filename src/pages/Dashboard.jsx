@@ -77,26 +77,28 @@ const Dashboard = () => {
 
   return (
     <div className="space-y-8 animate-slide-up">
-      {/* Perfect Light Mode Header */}
+      {/* Header */}
       <div className="glass-ultra p-6 rounded-3xl hover-glow">
-        <div className="flex items-center space-x-4 mb-5">
-          <div className="w-14 h-14 rounded-3xl gradient-cyber flex items-center justify-center pulse-neon">
-            <Users className="w-7 h-7 text-white" />
-          </div>
-          <div>
-            <h1 className="text-3xl font-bold bg-gradient-to-r from-violet-700 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-              Dashboard
-            </h1>
-            <p className="text-base text-perfect-dim font-medium">
-              O'qituvchilar va dars jadvallari
-            </p>
+        <div className="flex items-center justify-between mb-5">
+          <div className="flex items-center space-x-4">
+            <div className="w-14 h-14 rounded-3xl gradient-cyber flex items-center justify-center pulse-neon">
+              <Users className="w-7 h-7 text-white" />
+            </div>
+            <div>
+              <h1 className="text-3xl font-bold bg-gradient-to-r from-gray-700 via-gray-600 to-gray-500 bg-clip-text text-transparent">
+                Dashboard
+              </h1>
+              <p className="text-base text-gray-600 font-medium">
+                O'qituvchilar va dars jadvallari
+              </p>
+            </div>
           </div>
         </div>
 
         {/* Beautiful Gradient Statistics Cards - Hidden on Mobile */}
         <div className="hidden md:grid grid-cols-3 gap-4 mb-6">
           <div className="relative group">
-            <div className="relative bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 p-6 rounded-2xl border border-blue-200/50 dark:border-blue-500/20 group-hover:shadow-xl group-hover:shadow-blue-500/20 transition-all duration-300">
+            <div className="relative bg-gradient-to-br from-blue-50 to-cyan-50 p-6 rounded-2xl border border-blue-200/50 group-hover:shadow-xl group-hover:shadow-blue-500/20 transition-all duration-300">
               <div className="flex items-center justify-between mb-3">
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center shadow-lg shadow-blue-500/30">
                   <Users className="w-6 h-6 text-white" />
@@ -112,14 +114,14 @@ const Dashboard = () => {
               <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
                 {stats.totalTeachers}
               </div>
-              <div className="text-sm font-medium text-blue-600/80 dark:text-blue-400/80">
+              <div className="text-sm font-medium text-blue-600/80">
                 O'qituvchilar
               </div>
             </div>
           </div>
 
           <div className="relative group">
-            <div className="relative bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-900/20 dark:to-teal-900/20 p-6 rounded-2xl border border-emerald-200/50 dark:border-emerald-500/20 group-hover:shadow-xl group-hover:shadow-emerald-500/20 transition-all duration-300">
+            <div className="relative bg-gradient-to-br from-emerald-50 to-teal-50 p-6 rounded-2xl border border-emerald-200/50 group-hover:shadow-xl group-hover:shadow-emerald-500/20 transition-all duration-300">
               <div className="flex items-center justify-between mb-3">
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-500 flex items-center justify-center shadow-lg shadow-emerald-500/30">
                   <Clock className="w-6 h-6 text-white" />
@@ -135,14 +137,14 @@ const Dashboard = () => {
               <div className="text-2xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
                 {stats.totalLessons}
               </div>
-              <div className="text-sm font-medium text-emerald-600/80 dark:text-emerald-400/80">
+              <div className="text-sm font-medium text-emerald-600/80">
                 Darslar
               </div>
             </div>
           </div>
 
           <div className="relative group">
-            <div className="relative bg-gradient-to-br from-violet-50 to-pink-50 dark:from-violet-900/20 dark:to-pink-900/20 p-6 rounded-2xl border border-violet-200/50 dark:border-violet-500/20 group-hover:shadow-xl group-hover:shadow-violet-500/20 transition-all duration-300">
+            <div className="relative bg-gradient-to-br from-violet-50 to-pink-50 p-6 rounded-2xl border border-violet-200/50 group-hover:shadow-xl group-hover:shadow-violet-500/20 transition-all duration-300">
               <div className="flex items-center justify-between mb-3">
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-violet-500 to-pink-500 flex items-center justify-center shadow-lg shadow-violet-500/30">
                   <svg
@@ -170,7 +172,7 @@ const Dashboard = () => {
               <div className="text-2xl font-bold bg-gradient-to-r from-violet-600 to-pink-600 bg-clip-text text-transparent">
                 {stats.totalGroups}
               </div>
-              <div className="text-sm font-medium text-violet-600/80 dark:text-violet-400/80">
+              <div className="text-sm font-medium text-violet-600/80">
                 Guruhlar
               </div>
             </div>
@@ -185,7 +187,7 @@ const Dashboard = () => {
         />
       </div>
 
-      {/* Perfect Light Mode Teachers Grid */}
+      {/* Teachers Grid */}
       {filteredTeachers.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {filteredTeachers.map((teacher, index) => (
@@ -209,10 +211,10 @@ const Dashboard = () => {
                     .slice(0, 2)}
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h3 className="font-bold text-base text-perfect truncate">
+                  <h3 className="font-bold text-base text-gray-900 truncate">
                     {teacher.fullName}
                   </h3>
-                  <p className="text-perfect-dim text-sm">
+                  <p className="text-gray-600 text-sm">
                     {
                       state.lessons.filter((l) => l.teacherId === teacher.id)
                         .length
@@ -225,16 +227,16 @@ const Dashboard = () => {
           ))}
         </div>
       ) : (
-        <div className="text-center mt-8 text-perfect-dim text-sm">
+        <div className="text-center mt-8 text-gray-600 text-sm">
           Hech narsa topilmadi.
         </div>
       )}
 
-      {/* Perfect Light Mode Modal - O'qituvchi jadvali */}
+      {/* Modal - O'qituvchi jadvali */}
       {selectedTeacher && (
         <div className="fixed inset-0 bg-black/20 flex items-center justify-center p-3 z-50 animate-slide-up">
           <div className="bg-white rounded-2xl w-full max-w-6xl max-h-[90vh] overflow-hidden border border-gray-200/50 shadow-2xl">
-            {/* Ultra Modal Header - Compact */}
+            {/* Modal Header */}
             <div className="relative overflow-hidden">
               <div className="px-6 py-5 relative bg-white border-b border-gray-100/80">
                 <div className="relative flex items-center justify-between">
@@ -252,10 +254,10 @@ const Dashboard = () => {
                         .slice(0, 2)}
                     </div>
                     <div>
-                      <h2 className="text-2xl font-bold text-perfect">
+                      <h2 className="text-2xl font-bold text-gray-900">
                         {selectedTeacher.fullName}
                       </h2>
-                      <p className="text-perfect-accent text-sm font-medium">
+                      <p className="text-gray-600 text-sm font-medium">
                         📅 Haftalik dars jadvali
                       </p>
                     </div>
@@ -270,9 +272,9 @@ const Dashboard = () => {
               </div>
             </div>
 
-            {/* Ultra Modal Body - Compact */}
+            {/* Modal Body with Dark Mode Support */}
             <div className="p-5 max-h-[calc(90vh-120px)] overflow-y-auto scroll-desktop">
-              {/* Ultra Mobile Accordion - Compact */}
+              {/* Mobile Accordion with Dark Mode */}
               <div className="space-y-3 md:hidden">
                 {DAYS_OF_WEEK.filter((d) => d.id <= 6).map((day) => {
                   const dayLessons = scheduleMemo ? scheduleMemo[day.id] : [];
@@ -280,12 +282,12 @@ const Dashboard = () => {
                   return (
                     <div
                       key={day.id}
-                      className="bg-white rounded-xl border overflow-hidden shadow-sm hover:shadow-md hover:bg-gray-50/40 transition-all duration-300"
+                      className="bg-white "
                       style={{ borderColor: "#e1e1e1" }}
                     >
                       <button
                         onClick={() => setOpenMobileDay(isOpen ? null : day.id)}
-                        className="w-full flex items-center justify-between px-4 py-3 bg-white hover:bg-gray-50/60 text-left transition-all duration-300 group"
+                        className="w-full flex items-center justify-between px-4 py-3 bg-white "
                       >
                         <div className="flex items-center gap-3">
                           <div
@@ -296,21 +298,23 @@ const Dashboard = () => {
                           >
                             {day.name.charAt(0)}
                           </div>
-                          <span className="font-bold text-lg text-perfect group-hover:text-perfect-accent transition-colors duration-300">
+                          <span className="font-bold text-lg text-gray-900 ">
                             {day.name}
                           </span>
                         </div>
                         <div className="flex items-center gap-3">
-                          <span className="text-sm px-3 py-1 rounded-lg bg-gray-100/80 text-gray-700 font-bold">
+                          <span className="text-sm px-3 py-1 rounded-lg bg-gray-100/80 ">
                             {dayLessons?.length || 0}
                           </span>
                           <div
-                            className={`w-6 h-6 rounded-lg bg-gray-200/80 flex items-center justify-center transition-all duration-300 group-hover:scale-110 ${
-                              isOpen ? "rotate-180 bg-gray-300/90" : ""
+                            className={`w-6 h-6 rounded-lg bg-gray-200/80 
+                              isOpen
+                                ? "rotate-180 bg-gray-300/90 "
+                                : ""
                             }`}
                           >
                             <svg
-                              className="w-3 h-3 text-gray-600"
+                              className="w-3 h-3 text-gray-600 "
                               fill="none"
                               stroke="currentColor"
                               viewBox="0 0 24 24"
@@ -332,13 +336,13 @@ const Dashboard = () => {
                             : "max-h-0 opacity-0"
                         } overflow-hidden`}
                       >
-                        <div className="p-4 bg-gray-50/30">
+                        <div className="p-4 bg-gray-50/30 ">
                           {dayLessons && dayLessons.length > 0 ? (
                             <div className="space-y-2">
                               {dayLessons.map((lesson, idx) => (
                                 <div
                                   key={lesson.id}
-                                  className="flex items-center gap-3 py-2 px-3 rounded-lg bg-white/90 hover:bg-gray-50/60 transition-all duration-200 border"
+                                  className="flex items-center gap-3 py-2 px-3 rounded-lg bg-white/90 "
                                   style={{ borderColor: "#e1e1e1" }}
                                 >
                                   <div
@@ -350,10 +354,10 @@ const Dashboard = () => {
                                     <Clock size={10} />
                                   </div>
                                   <div className="flex-1 min-w-0">
-                                    <div className="text-sm font-bold text-gray-700">
+                                    <div className="text-sm font-bold text-gray-700 ">
                                       {lesson.time}
                                     </div>
-                                    <div className="text-xs text-perfect truncate">
+                                    <div className="text-xs text-gray-600 ">
                                       📚 {lesson.group}
                                     </div>
                                   </div>
@@ -370,10 +374,8 @@ const Dashboard = () => {
                             </div>
                           ) : (
                             <div className="text-center py-6">
-                              <Clock className="w-8 h-8 mx-auto mb-2 text-perfect-accent" />
-                              <p className="text-perfect-dim font-medium text-sm">
-                                Dars yo'q
-                              </p>
+                              <Clock className="w-8 h-8 mx-auto mb-2 text-gray-600 " />
+                              <p className="text-gray-600 ">Dars yo'q</p>
                             </div>
                           )}
                         </div>
@@ -383,14 +385,14 @@ const Dashboard = () => {
                 })}
               </div>
 
-              {/* Ultra Desktop Grid - Compact */}
+              {/* Ultra Desktop Grid - Compact with Dark Mode Support */}
               <div className="hidden md:grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                 {DAYS_OF_WEEK.filter((d) => d.id <= 6).map((day, dayIndex) => {
                   const dayLessons = scheduleMemo ? scheduleMemo[day.id] : [];
                   return (
                     <div
                       key={day.id}
-                      className="neon-card p-4 hover-glow animate-slide-up border"
+                      className="neon-card p-4 hover-glow animate-slide-up border "
                       style={{
                         animationDelay: `${dayIndex * 120}ms`,
                         borderColor: "#e1e1e1",
@@ -401,11 +403,11 @@ const Dashboard = () => {
                           <div className="w-8 h-8 rounded-xl gradient-cyber flex items-center justify-center text-white font-bold text-sm">
                             {day.name.charAt(0)}
                           </div>
-                          <h3 className="text-lg font-bold text-perfect-accent">
+                          <h3 className="text-lg font-bold text-gray-900 ">
                             {day.name}
                           </h3>
                         </div>
-                        <div className="px-2 py-1 rounded-lg bg-gray-100/80 text-gray-700 text-xs font-bold">
+                        <div className="px-2 py-1 rounded-lg bg-gray-100/80 ">
                           {dayLessons?.length || 0}
                         </div>
                       </div>
@@ -416,7 +418,7 @@ const Dashboard = () => {
                             {dayLessons.map((lesson, idx) => (
                               <div
                                 key={lesson.id}
-                                className="flex items-center gap-2 py-2 px-2 rounded-lg bg-white/90 hover:bg-gray-50/60 transition-all duration-200 border"
+                                className="flex items-center gap-2 py-2 px-2 rounded-lg bg-white/90 "
                                 style={{ borderColor: "#e1e1e1" }}
                               >
                                 <div
@@ -428,10 +430,10 @@ const Dashboard = () => {
                                   <Clock size={8} />
                                 </div>
                                 <div className="flex-1 min-w-0">
-                                  <div className="text-xs font-bold text-gray-700">
+                                  <div className="text-xs font-bold text-gray-700 ">
                                     {lesson.time}
                                   </div>
-                                  <div className="text-xs text-perfect truncate">
+                                  <div className="text-xs text-gray-600 ">
                                     📚 {lesson.group}
                                   </div>
                                 </div>
@@ -448,11 +450,9 @@ const Dashboard = () => {
                           </div>
                         ) : (
                           <div className="text-center py-6">
-                            <Clock className="w-6 h-6 mx-auto mb-2 text-perfect-accent" />
-                            <p className="text-perfect-dim font-medium text-xs">
-                              Dars yo'q
-                            </p>
-                            <p className="text-xs text-perfect-dim/60 mt-1">
+                            <Clock className="w-6 h-6 mx-auto mb-2 text-gray-600 " />
+                            <p className="text-gray-600 ">Dars yo'q</p>
+                            <p className="text-xs text-gray-500 ">
                               Bu kunda dars rejalashtirilmagan
                             </p>
                           </div>

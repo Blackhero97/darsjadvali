@@ -105,7 +105,7 @@ const Layout = ({ children, currentPage, onPageChange }) => {
       >
         <div className="flex h-full flex-col">
           {/* Ultra Logo */}
-          <div className="flex h-20 items-center justify-between px-6 border-b border-violet-200/30 dark:border-violet-700/30">
+          <div className="flex h-20 items-center justify-between px-6 border-b border-violet-200/30 ">
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 gradient-cyber rounded-xl flex items-center justify-center pulse-neon">
                 <Calendar className="w-6 h-6 text-white" />
@@ -121,7 +121,7 @@ const Layout = ({ children, currentPage, onPageChange }) => {
             </div>
             <button
               onClick={() => setIsSidebarOpen(false)}
-              className="lg:hidden p-2 text-perfect-dim hover:text-perfect-accent rounded-xl hover:bg-violet-50/60 dark:hover:bg-violet-900/30 transition-all duration-300 hover:scale-110"
+              className="lg:hidden p-2 text-perfect-dim hover:text-perfect-accent rounded-xl hover:bg-violet-50/60 "
             >
               <X size={20} />
             </button>
@@ -142,7 +142,7 @@ const Layout = ({ children, currentPage, onPageChange }) => {
                     "w-full flex items-center px-4 py-3 rounded-xl font-medium transition-all duration-300 group animate-slide-up",
                     isActive
                       ? "bg-gradient-to-r from-violet-600 to-purple-600 text-white shadow-lg shadow-violet-500/30 scale-105"
-                      : "text-violet-700/80 dark:text-violet-300/90 hover:bg-gradient-to-r hover:from-violet-50 hover:to-purple-50 dark:hover:from-violet-900/30 dark:hover:to-purple-900/30 hover:text-violet-800 dark:hover:text-violet-200 hover:scale-102"
+                      : "text-violet-700/80 "
                   )}
                   style={{ animationDelay: `${index * 0.08}s` }}
                 >
@@ -151,7 +151,7 @@ const Layout = ({ children, currentPage, onPageChange }) => {
                       "mr-3 h-5 w-5 transition-transform duration-300 group-hover:scale-110",
                       isActive
                         ? "text-white"
-                        : "text-violet-600/70 dark:text-violet-400/70 group-hover:text-violet-700 dark:group-hover:text-violet-300"
+                        : "text-violet-600/70 "
                     )}
                   />
                   {item.name}
@@ -164,15 +164,15 @@ const Layout = ({ children, currentPage, onPageChange }) => {
           </nav>
 
           {/* Perfect Light Mode Toggle */}
-          <div className="p-5 border-t border-violet-100/60 dark:border-violet-700/30">
-            <div className="glass-ultra p-4 rounded-2xl border border-violet-100/60 dark:border-violet-700/40">
+          <div className="p-5 border-t border-violet-100/60 ">
+            <div className="glass-ultra p-4 rounded-2xl border border-violet-100/60 ">
               <div className="flex items-center justify-between">
                 <span className="text-sm font-medium text-perfect">
                   {isDark ? "Dark Mode" : "Light Mode"}
                 </span>
                 <button
                   onClick={() => setIsDark(!isDark)}
-                  className="w-12 h-6 rounded-full bg-violet-100 dark:bg-violet-800 relative transition-all duration-300 hover:scale-110 border border-violet-200/60"
+                  className="w-12 h-6 rounded-full bg-violet-100 "
                 >
                   <div
                     className={clsx(
@@ -198,7 +198,7 @@ const Layout = ({ children, currentPage, onPageChange }) => {
       {/* Perfect Main content */}
       <div className="lg:pl-72">
         {/* Perfect Top bar */}
-        <header className="sticky top-0 z-30 flex h-16 items-center gap-x-4 glass-ultra border-b border-violet-100/80 dark:border-white/10 px-4 sm:gap-x-6 sm:px-6 lg:px-8">
+        <header className="sticky top-0 z-30 flex h-16 items-center gap-x-4 glass-ultra border-b border-violet-100/80 ">
           <button
             onClick={() => setIsSidebarOpen(true)}
             className="lg:hidden p-2 text-perfect-dim hover:text-perfect-accent rounded-xl hover:bg-violet-50/60 transition-all duration-300 hover:scale-110"

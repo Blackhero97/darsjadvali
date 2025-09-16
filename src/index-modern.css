@@ -47,6 +47,39 @@
     color-scheme: light;
   }
 
+  /* Dark Mode Theme */
+  .dark {
+    --color-bg: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+    --color-bg-alt: #1e293b;
+    --color-bg-accent: #334155;
+    --color-surface: rgba(30, 41, 59, 0.95);
+    --color-surface-alt: rgba(51, 65, 85, 0.9);
+    --color-sidebar: rgba(15, 23, 42, 0.98);
+    --color-border: rgba(71, 85, 105, 0.25);
+    --color-border-strong: rgba(71, 85, 105, 0.35);
+    --color-text: #f1f5f9;
+    --color-text-dim: #cbd5e1;
+    --color-text-faint: #94a3b8;
+    --color-accent: #6366f1;
+    --color-accent-rgb: 99 102 241;
+    --color-accent-alt: #8b5cf6;
+    --color-accent-contrast: #ffffff;
+    --color-danger: #f43f5e;
+    --color-success: #06d6a0;
+    --color-warning: #fbbf24;
+    --shadow-glow: 0 0 20px rgba(99, 102, 241, 0.1);
+    --shadow-neon: 0 0 30px rgba(99, 102, 241, 0.12),
+      0 0 60px rgba(99, 102, 241, 0.06);
+    --shadow-soft: 0 8px 32px rgba(15, 23, 42, 0.4);
+    --shadow-strong: 0 16px 64px rgba(15, 23, 42, 0.6);
+    --radius-sm: 16px;
+    --radius: 24px;
+    --radius-lg: 32px;
+    --focus-ring: 0 0 0 3px rgba(var(--color-accent-rgb) / 0.25),
+      0 0 20px rgba(var(--color-accent-rgb) / 0.15);
+    color-scheme: dark;
+  }
+
   body {
     margin: 0;
     min-height: 100vh;
