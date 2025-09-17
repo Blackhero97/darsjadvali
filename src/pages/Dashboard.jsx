@@ -10,6 +10,80 @@ const Dashboard = () => {
   const [selectedTeacher, setSelectedTeacher] = useState(null);
   const [search, setSearch] = useState("");
   const [openMobileDay, setOpenMobileDay] = useState(null);
+  const [currentTime, setCurrentTime] = useState(new Date());
+
+  // Har daqiqada vaqtni yangilash
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 60000); // 1 daqiqada bir marta
+
+    return () => clearInterval(timer);
+  }, []);
+
+  // Dars vaqti rangini aniqlash funksiyasi
+  const getLessonTimeColor = (startTime, endTime) => {
+    const currentHour = currentTime.getHours();
+    const currentMinute = currentTime.getMinutes();
+    const currentTimeInMinutes = currentHour * 60 + currentMinute;
+
+    // Dars vaqtlarini minutlarga o'girish
+    const [startHour, startMin] = startTime.split(":").map(Number);
+    const [endHour, endMin] = endTime.split(":").map(Number);
+    const startTimeInMinutes = startHour * 60 + startMin;
+    const endTimeInMinutes = endHour * 60 + endMin;
+
+    // 30 daqiqa oldin sariq, davomida yashil, 15 daqiqa keyin qizil
+    const timeDiffStart = startTimeInMinutes - currentTimeInMinutes;
+    const timeDiffEnd = endTimeInMinutes - currentTimeInMinutes;
+
+    if (timeDiffStart <= 30 && timeDiffStart > 0) {
+      // Dars boshlanishiga 30 daqiqa qolgan - SARIQ
+      return "bg-gradient-to-r from-yellow-400 to-amber-400 text-white border-yellow-300 shadow-lg";
+    } else if (
+      currentTimeInMinutes >= startTimeInMinutes &&
+      currentTimeInMinutes <= endTimeInMinutes
+    ) {
+      // Dars davom etmoqda - YASHIL
+      return "bg-gradient-to-r from-green-400 to-emerald-400 text-white border-green-300 animate-pulse shadow-lg";
+    } else if (timeDiffEnd < 0 && timeDiffEnd >= -15) {
+      // Dars tugaganiga 15 daqiqa bo'lgan - QIZIL
+      return "bg-gradient-to-r from-red-400 to-rose-400 text-white border-red-300 shadow-lg";
+    }
+
+    // Oddiy holat - OQ/KULRANG
+    return "bg-white hover:bg-gray-50/40 text-gray-700 border-gray-200";
+  };
+
+  // Matn rangini aniqlash funksiyasi
+  const getTextColor = (startTime, endTime) => {
+    const currentHour = currentTime.getHours();
+    const currentMinute = currentTime.getMinutes();
+    const currentTimeInMinutes = currentHour * 60 + currentMinute;
+
+    // Dars vaqtlarini minutlarga o'girish
+    const [startHour, startMin] = startTime.split(":").map(Number);
+    const [endHour, endMin] = endTime.split(":").map(Number);
+    const startTimeInMinutes = startHour * 60 + startMin;
+    const endTimeInMinutes = endHour * 60 + endMin;
+
+    // 30 daqiqa oldin sariq, davomida yashil, 15 daqiqa keyin qizil
+    const timeDiffStart = startTimeInMinutes - currentTimeInMinutes;
+    const timeDiffEnd = endTimeInMinutes - currentTimeInMinutes;
+
+    if (timeDiffStart <= 30 && timeDiffStart > 0) {
+      return "text-white"; // Sariq fonda oq matn
+    } else if (
+      currentTimeInMinutes >= startTimeInMinutes &&
+      currentTimeInMinutes <= endTimeInMinutes
+    ) {
+      return "text-white"; // Yashil fonda oq matn
+    } else if (timeDiffEnd < 0 && timeDiffEnd >= -15) {
+      return "text-white"; // Qizil fonda oq matn
+    }
+
+    return "text-gray-700"; // Oq fonda qora matn
+  };
 
   // O'qituvchi jadvalini olish
   const getTeacherSchedule = (teacherId) => {
@@ -199,7 +273,7 @@ const Dashboard = () => {
             >
               <div className="flex items-center gap-3">
                 <div
-                  className="w-12 h-12 rounded-2xl flex items-center justify-center text-white font-bold text-base"
+                  className="w-12 h-12 rounded-2xl flex items-center justify-center text-white font-bold text-base text-center"
                   style={{
                     background: `linear-gradient(135deg, ${teacher.color} 0%, ${teacher.color}dd 100%)`,
                   }}
@@ -307,10 +381,10 @@ const Dashboard = () => {
                             {dayLessons?.length || 0}
                           </span>
                           <div
-                            className={`w-6 h-6 rounded-lg bg-gray-200/80 
+                            className={`w-6 h-6 rounded-lg flex items-center justify-center transition-all duration-300 ${
                               isOpen
-                                ? "rotate-180 bg-gray-300/90 "
-                                : ""
+                                ? "rotate-180 bg-gray-300/90"
+                                : "bg-gray-200/80"
                             }`}
                           >
                             <svg
@@ -339,38 +413,54 @@ const Dashboard = () => {
                         <div className="p-4 bg-gray-50/30 ">
                           {dayLessons && dayLessons.length > 0 ? (
                             <div className="space-y-2">
-                              {dayLessons.map((lesson, idx) => (
-                                <div
-                                  key={lesson.id}
-                                  className="flex items-center gap-3 py-2 px-3 rounded-lg bg-white/90 "
-                                  style={{ borderColor: "#e1e1e1" }}
-                                >
+                              {dayLessons.map((lesson, idx) => {
+                                const [startTime, endTime] =
+                                  lesson.time.split("-");
+                                const timeColorClass = getLessonTimeColor(
+                                  startTime,
+                                  endTime
+                                );
+                                const textColorClass = getTextColor(
+                                  startTime,
+                                  endTime
+                                );
+                                return (
                                   <div
-                                    className="w-6 h-6 rounded-lg flex items-center justify-center text-white"
-                                    style={{
-                                      background: `linear-gradient(135deg, ${selectedTeacher.color} 0%, ${selectedTeacher.color}dd 100%)`,
-                                    }}
+                                    key={lesson.id}
+                                    className={`flex items-center gap-3 py-2 px-3 rounded-lg transition-all duration-300 ${timeColorClass}`}
+                                    style={{ borderWidth: "1px" }}
                                   >
-                                    <Clock size={10} />
-                                  </div>
-                                  <div className="flex-1 min-w-0">
-                                    <div className="text-sm font-bold text-gray-700 ">
-                                      {lesson.time}
-                                    </div>
-                                    <div className="text-xs text-gray-600 ">
-                                      📚 {lesson.group}
-                                    </div>
-                                  </div>
-                                  {lesson.note && (
                                     <div
-                                      className="w-4 h-4 rounded-full bg-amber-300/80 flex items-center justify-center"
-                                      title={lesson.note}
+                                      className="w-6 h-6 rounded-lg flex items-center justify-center text-white"
+                                      style={{
+                                        background: `linear-gradient(135deg, ${selectedTeacher.color} 0%, ${selectedTeacher.color}dd 100%)`,
+                                      }}
                                     >
-                                      <div className="w-2 h-2 rounded-full bg-amber-600"></div>
+                                      <Clock size={10} />
                                     </div>
-                                  )}
-                                </div>
-                              ))}
+                                    <div className="flex-1 min-w-0">
+                                      <div
+                                        className={`text-sm font-bold ${textColorClass}`}
+                                      >
+                                        {lesson.time}
+                                      </div>
+                                      <div
+                                        className={`text-xs ${textColorClass} opacity-90`}
+                                      >
+                                        📚 {lesson.group}
+                                      </div>
+                                    </div>
+                                    {lesson.note && (
+                                      <div
+                                        className="w-4 h-4 rounded-full bg-amber-300/80 flex items-center justify-center"
+                                        title={lesson.note}
+                                      >
+                                        <div className="w-2 h-2 rounded-full bg-amber-600"></div>
+                                      </div>
+                                    )}
+                                  </div>
+                                );
+                              })}
                             </div>
                           ) : (
                             <div className="text-center py-6">
@@ -415,38 +505,54 @@ const Dashboard = () => {
                       <div className="overflow-visible">
                         {dayLessons && dayLessons.length > 0 ? (
                           <div className="space-y-2">
-                            {dayLessons.map((lesson, idx) => (
-                              <div
-                                key={lesson.id}
-                                className="flex items-center gap-2 py-2 px-2 rounded-lg bg-white/90 "
-                                style={{ borderColor: "#e1e1e1" }}
-                              >
+                            {dayLessons.map((lesson, idx) => {
+                              const [startTime, endTime] =
+                                lesson.time.split("-");
+                              const timeColorClass = getLessonTimeColor(
+                                startTime,
+                                endTime
+                              );
+                              const textColorClass = getTextColor(
+                                startTime,
+                                endTime
+                              );
+                              return (
                                 <div
-                                  className="w-5 h-5 rounded-lg flex items-center justify-center text-white"
-                                  style={{
-                                    background: `linear-gradient(135deg, ${selectedTeacher.color} 0%, ${selectedTeacher.color}dd 100%)`,
-                                  }}
+                                  key={lesson.id}
+                                  className={`flex items-center gap-2 py-2 px-2 rounded-lg transition-all duration-300 ${timeColorClass}`}
+                                  style={{ borderWidth: "1px" }}
                                 >
-                                  <Clock size={8} />
-                                </div>
-                                <div className="flex-1 min-w-0">
-                                  <div className="text-xs font-bold text-gray-700 ">
-                                    {lesson.time}
-                                  </div>
-                                  <div className="text-xs text-gray-600 ">
-                                    📚 {lesson.group}
-                                  </div>
-                                </div>
-                                {lesson.note && (
                                   <div
-                                    className="w-3 h-3 rounded-full bg-amber-400/70 flex items-center justify-center"
-                                    title={lesson.note}
+                                    className="w-5 h-5 rounded-lg flex items-center justify-center text-white"
+                                    style={{
+                                      background: `linear-gradient(135deg, ${selectedTeacher.color} 0%, ${selectedTeacher.color}dd 100%)`,
+                                    }}
                                   >
-                                    <div className="w-1.5 h-1.5 rounded-full bg-amber-600"></div>
+                                    <Clock size={8} />
                                   </div>
-                                )}
-                              </div>
-                            ))}
+                                  <div className="flex-1 min-w-0">
+                                    <div
+                                      className={`text-xs font-bold ${textColorClass}`}
+                                    >
+                                      {lesson.time}
+                                    </div>
+                                    <div
+                                      className={`text-xs ${textColorClass} opacity-90`}
+                                    >
+                                      📚 {lesson.group}
+                                    </div>
+                                  </div>
+                                  {lesson.note && (
+                                    <div
+                                      className="w-3 h-3 rounded-full bg-amber-400/70 flex items-center justify-center"
+                                      title={lesson.note}
+                                    >
+                                      <div className="w-1.5 h-1.5 rounded-full bg-amber-600"></div>
+                                    </div>
+                                  )}
+                                </div>
+                              );
+                            })}
                           </div>
                         ) : (
                           <div className="text-center py-6">
