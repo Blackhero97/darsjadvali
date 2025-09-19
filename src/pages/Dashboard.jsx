@@ -150,19 +150,19 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="space-y-8 animate-slide-up">
+    <div className="space-y-8 animate-slide-up bg-gradient-to-br from-violet-50/30 via-white to-indigo-50/30 min-h-screen -m-6 p-6">
       {/* Header */}
-      <div className="glass-ultra p-6 rounded-3xl hover-glow">
+      <div className="glass-ultra p-6 rounded-3xl hover-glow bg-gradient-to-br from-violet-50 via-purple-50 to-indigo-50 border border-violet-200/60 shadow-xl shadow-violet-500/10">
         <div className="flex items-center justify-between mb-5">
           <div className="flex items-center space-x-4">
-            <div className="w-14 h-14 rounded-3xl gradient-cyber flex items-center justify-center pulse-neon">
+            <div className="w-14 h-14 rounded-3xl bg-gradient-to-br from-violet-500 via-purple-600 to-indigo-600 flex items-center justify-center shadow-2xl shadow-violet-500/40 animate-pulse">
               <Users className="w-7 h-7 text-white" />
             </div>
             <div>
-              <h1 className="text-3xl font-bold bg-gradient-to-r from-gray-700 via-gray-600 to-gray-500 bg-clip-text text-transparent">
+              <h1 className="text-3xl font-bold bg-gradient-to-r from-violet-700 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
                 Dashboard
               </h1>
-              <p className="text-base text-gray-600 font-medium">
+              <p className="text-base text-violet-600 font-medium">
                 O'qituvchilar va dars jadvallari
               </p>
             </div>
@@ -172,55 +172,55 @@ const Dashboard = () => {
         {/* Beautiful Gradient Statistics Cards - Hidden on Mobile */}
         <div className="hidden md:grid grid-cols-3 gap-4 mb-6">
           <div className="relative group">
-            <div className="relative bg-gradient-to-br from-blue-50 to-cyan-50 p-6 rounded-2xl border border-blue-200/50 group-hover:shadow-xl group-hover:shadow-blue-500/20 transition-all duration-300">
+            <div className="relative bg-gradient-to-br from-blue-100 via-cyan-50 to-sky-100 p-6 rounded-2xl border border-blue-300/40 group-hover:shadow-2xl group-hover:shadow-blue-500/30 transition-all duration-300 hover:scale-105">
               <div className="flex items-center justify-between mb-3">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center shadow-lg shadow-blue-500/30">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600 to-cyan-600 flex items-center justify-center shadow-xl shadow-blue-500/50">
                   <Users className="w-6 h-6 text-white" />
                 </div>
                 <div className="flex space-x-1">
-                  <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+                  <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
                   <div
-                    className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"
+                    className="w-2 h-2 bg-cyan-500 rounded-full animate-pulse"
                     style={{ animationDelay: "0.2s" }}
                   ></div>
                 </div>
               </div>
-              <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+              <div className="text-2xl font-bold bg-gradient-to-r from-blue-700 to-cyan-700 bg-clip-text text-transparent">
                 {stats.totalTeachers}
               </div>
-              <div className="text-sm font-medium text-blue-600/80">
+              <div className="text-sm font-medium text-blue-700/90">
                 O'qituvchilar
               </div>
             </div>
           </div>
 
           <div className="relative group">
-            <div className="relative bg-gradient-to-br from-emerald-50 to-teal-50 p-6 rounded-2xl border border-emerald-200/50 group-hover:shadow-xl group-hover:shadow-emerald-500/20 transition-all duration-300">
+            <div className="relative bg-gradient-to-br from-emerald-100 via-teal-50 to-green-100 p-6 rounded-2xl border border-emerald-300/40 group-hover:shadow-2xl group-hover:shadow-emerald-500/30 transition-all duration-300 hover:scale-105">
               <div className="flex items-center justify-between mb-3">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-500 flex items-center justify-center shadow-lg shadow-emerald-500/30">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-600 to-teal-600 flex items-center justify-center shadow-xl shadow-emerald-500/50">
                   <Clock className="w-6 h-6 text-white" />
                 </div>
                 <div className="flex space-x-1">
-                  <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+                  <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
                   <div
-                    className="w-2 h-2 bg-teal-400 rounded-full animate-pulse"
+                    className="w-2 h-2 bg-teal-500 rounded-full animate-pulse"
                     style={{ animationDelay: "0.2s" }}
                   ></div>
                 </div>
               </div>
-              <div className="text-2xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
+              <div className="text-2xl font-bold bg-gradient-to-r from-emerald-700 to-teal-700 bg-clip-text text-transparent">
                 {stats.totalLessons}
               </div>
-              <div className="text-sm font-medium text-emerald-600/80">
+              <div className="text-sm font-medium text-emerald-700/90">
                 Darslar
               </div>
             </div>
           </div>
 
           <div className="relative group">
-            <div className="relative bg-gradient-to-br from-violet-50 to-pink-50 p-6 rounded-2xl border border-violet-200/50 group-hover:shadow-xl group-hover:shadow-violet-500/20 transition-all duration-300">
+            <div className="relative bg-gradient-to-br from-violet-100 via-purple-50 to-fuchsia-100 p-6 rounded-2xl border border-violet-300/40 group-hover:shadow-2xl group-hover:shadow-violet-500/30 transition-all duration-300 hover:scale-105">
               <div className="flex items-center justify-between mb-3">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-violet-500 to-pink-500 flex items-center justify-center shadow-lg shadow-violet-500/30">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-violet-600 to-fuchsia-600 flex items-center justify-center shadow-xl shadow-violet-500/50">
                   <svg
                     className="w-6 h-6 text-white"
                     fill="none"
@@ -236,17 +236,17 @@ const Dashboard = () => {
                   </svg>
                 </div>
                 <div className="flex space-x-1">
-                  <div className="w-2 h-2 bg-violet-400 rounded-full animate-pulse"></div>
+                  <div className="w-2 h-2 bg-violet-500 rounded-full animate-pulse"></div>
                   <div
-                    className="w-2 h-2 bg-pink-400 rounded-full animate-pulse"
+                    className="w-2 h-2 bg-fuchsia-500 rounded-full animate-pulse"
                     style={{ animationDelay: "0.2s" }}
                   ></div>
                 </div>
               </div>
-              <div className="text-2xl font-bold bg-gradient-to-r from-violet-600 to-pink-600 bg-clip-text text-transparent">
+              <div className="text-2xl font-bold bg-gradient-to-r from-violet-700 to-fuchsia-700 bg-clip-text text-transparent">
                 {stats.totalGroups}
               </div>
-              <div className="text-sm font-medium text-violet-600/80">
+              <div className="text-sm font-medium text-violet-700/90">
                 Guruhlar
               </div>
             </div>
@@ -267,13 +267,13 @@ const Dashboard = () => {
           {filteredTeachers.map((teacher, index) => (
             <div
               key={teacher.id}
-              className="neon-card p-5 cursor-pointer hover-glow animate-slide-up"
+              className="bg-gradient-to-br from-white via-gray-50 to-indigo-50/30 p-5 cursor-pointer rounded-2xl border border-indigo-200/40 hover:shadow-2xl hover:shadow-indigo-500/20 transition-all duration-300 hover:scale-102 hover:border-indigo-300/60 animate-slide-up"
               style={{ animationDelay: `${index * 80}ms` }}
               onClick={() => setSelectedTeacher(teacher)}
             >
               <div className="flex items-center gap-3">
                 <div
-                  className="w-12 h-12 rounded-2xl flex items-center justify-center text-white font-bold text-base text-center"
+                  className="w-12 h-12 rounded-2xl flex items-center justify-center text-white font-bold text-base text-center shadow-lg hover:shadow-xl transition-shadow duration-300"
                   style={{
                     background: `linear-gradient(135deg, ${teacher.color} 0%, ${teacher.color}dd 100%)`,
                   }}
@@ -285,10 +285,10 @@ const Dashboard = () => {
                     .slice(0, 2)}
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h3 className="font-bold text-base text-gray-900 truncate">
+                  <h3 className="font-bold text-base text-gray-800 truncate">
                     {teacher.fullName}
                   </h3>
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-indigo-600/80 text-sm font-medium">
                     {
                       state.lessons.filter((l) => l.teacherId === teacher.id)
                         .length
@@ -301,22 +301,22 @@ const Dashboard = () => {
           ))}
         </div>
       ) : (
-        <div className="text-center mt-8 text-gray-600 text-sm">
+        <div className="text-center mt-8 text-violet-600 text-sm font-medium">
           Hech narsa topilmadi.
         </div>
       )}
 
       {/* Modal - O'qituvchi jadvali */}
       {selectedTeacher && (
-        <div className="fixed inset-0 bg-black/20 flex items-center justify-center p-3 z-50 animate-slide-up">
-          <div className="bg-white rounded-2xl w-full max-w-6xl max-h-[90vh] overflow-hidden border border-gray-200/50 shadow-2xl">
+        <div className="fixed inset-0 bg-gradient-to-br from-black/30 via-violet-900/20 to-indigo-900/30 backdrop-blur-sm flex items-center justify-center p-3 z-50 animate-slide-up">
+          <div className="bg-gradient-to-br from-white via-violet-50/30 to-indigo-50/20 rounded-3xl w-full max-w-6xl max-h-[90vh] overflow-hidden border border-violet-200/60 shadow-2xl shadow-violet-500/20">
             {/* Modal Header */}
             <div className="relative overflow-hidden">
-              <div className="px-6 py-5 relative bg-white border-b border-gray-100/80">
+              <div className="px-6 py-5 relative bg-gradient-to-r from-violet-50 via-purple-50 to-indigo-50 border-b border-violet-200/50">
                 <div className="relative flex items-center justify-between">
                   <div className="flex items-center gap-4">
                     <div
-                      className="w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-lg text-white shadow-lg"
+                      className="w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-lg text-white shadow-xl shadow-violet-500/30"
                       style={{
                         background: `linear-gradient(135deg, ${selectedTeacher.color} 0%, ${selectedTeacher.color}dd 100%)`,
                       }}
@@ -328,17 +328,17 @@ const Dashboard = () => {
                         .slice(0, 2)}
                     </div>
                     <div>
-                      <h2 className="text-2xl font-bold text-gray-900">
+                      <h2 className="text-2xl font-bold bg-gradient-to-r from-violet-700 to-indigo-700 bg-clip-text text-transparent">
                         {selectedTeacher.fullName}
                       </h2>
-                      <p className="text-gray-600 text-sm font-medium">
+                      <p className="text-violet-600 text-sm font-medium">
                         📅 Haftalik dars jadvali
                       </p>
                     </div>
                   </div>
                   <button
                     onClick={closeModal}
-                    className="p-2 hover:bg-gray-100/80 rounded-xl transition-all duration-300 hover:scale-110 hover:rotate-90 text-gray-600 hover:text-gray-800"
+                    className="p-2 hover:bg-violet-100/80 rounded-xl transition-all duration-300 hover:scale-110 hover:rotate-90 text-violet-600 hover:text-violet-800 shadow-sm hover:shadow-lg"
                   >
                     <X size={20} />
                   </button>
